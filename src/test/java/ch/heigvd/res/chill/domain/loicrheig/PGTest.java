@@ -1,7 +1,6 @@
-package ch.heigvd.res.chill.domain.rossetlo;
+package ch.heigvd.res.chill.domain.loicrheig;
 
 import ch.heigvd.res.chill.domain.Bartender;
-import ch.heigvd.res.chill.domain.rossetlo.PG;
 import ch.heigvd.res.chill.protocol.OrderRequest;
 import ch.heigvd.res.chill.protocol.OrderResponse;
 import org.junit.jupiter.api.Test;
@@ -22,7 +21,7 @@ class PGTest {
   @Test
   void aBartenderShouldAcceptAnOrderForPG() {
     Bartender jane = new Bartender();
-    String productName = "ch.heigvd.res.chill.domain.rossetlo.PG";
+    String productName = "ch.heigvd.res.chill.domain.loicrheig.PG";
     OrderRequest request = new OrderRequest(3, productName);
     OrderResponse response = jane.order(request);
     BigDecimal expectedTotalPrice = PG.PRICE.multiply(new BigDecimal(3));

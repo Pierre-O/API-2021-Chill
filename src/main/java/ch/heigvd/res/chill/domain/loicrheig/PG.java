@@ -1,4 +1,4 @@
-package ch.heigvd.res.chill.domain.rossetlo;
+package ch.heigvd.res.chill.domain.loicrheig;
 
 import ch.heigvd.res.chill.domain.IProduct;
 
